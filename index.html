@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css" type="text/css">
   <link rel="stylesheet" href="styles/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,700;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,500;1,700&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
@@ -16,14 +20,14 @@
 <body>
   <section id="hero">
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark my-navbar">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand ms-sm-2" href="#">LOGO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-lg-auto">
+          <ul class="navbar-nav ms-lg-auto text-uppercase">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
             </li>
@@ -38,7 +42,7 @@
             </li>
           </ul>
           <hr>
-          <ul class="navbar-nav me-lg-auto offset-lg-4">
+          <ul class="navbar-nav me-lg-6 offset-lg-4">
             <li class="nav-item">
               <a class="nav-link" href="#">Sign Up</a>
             </li>
@@ -165,6 +169,86 @@
             </tbody>
           </table>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="top-scores">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="text-light justify-content-center align-items-center top-scores-left">
+            <h1 class="top-scores-title">TOP SCORES</h1>
+            <p>This top score from various games provided on this platform</p>
+            <button class="btn btn-warning btn-lg see-more-btn" type="button">See More</button>
+          </div>
+        </div>
+        <div class="col-lg-7 mt-5 pt-5">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="card-container">
+              <div class="card w-50">
+                <div class="card-body">
+                  <div class="d-flex flex-row position-relative">
+                    <img src="./assets/evan-lahti.jpg" class="rounded-circle profle-img" alt="profile-img" />
+                    <div class="d-flex flex-row justify-content-between align-items-center w-100">
+                      <div class="d-flex flex-column column-profile">
+                        <h5 class="card-title">Evan Lahti</h5>
+                        <p class="card-text-subtitle">PC Gamer</p>
+                      </div>
+                      <img src="./assets/twitter.svg" class="twitter-img" alt="twitter-img"/>
+                    </div>
+                  </div>
+                  <p class="card-text-reviews text-light">"One of my gaming highlights of the year."</p>
+                  <p class="card-text-date">June, 18 2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card w-50">
+                <div class="card-body">
+                  <div class="d-flex flex-row position-relative">
+                    <img src="./assets/jada-griffin.jpg" class="rounded-circle profle-img" alt="profile-img" />
+                    <div class="d-flex flex-row justify-content-between align-items-center w-100">
+                      <div class="d-flex flex-column column-profile">
+                        <h5 class="card-title">Jada Griffin</h5>
+                        <p class="card-text-subtitle">Nerdreactor</p>
+                      </div>
+                      <img src="./assets/twitter.svg" class="twitter-img" alt="twitter-img"/>
+                    </div>
+                  </div>
+                  <p class="card-text-reviews text-light">"The next big thing in the world of streaming and survival games."</p>
+                  <p class="card-text-date">July, 10 2021</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card w-50">
+                <div class="card-body">
+                  <div class="d-flex flex-row position-relative">
+                    <img src="./assets/aaron-williams.jpg" class="rounded-circle profle-img" alt="profile-img" />
+                    <div class="d-flex flex-row justify-content-between align-items-center w-100">
+                      <div class="d-flex flex-column column-profile">
+                        <h5 class="card-title">Aaron Williams</h5>
+                        <p class="card-text-subtitle">Uproxx</p>
+                      </div>
+                      <img src="./assets/twitter.svg" class="twitter-img" alt="twitter-img"/>
+                    </div>
+                  </div>
+                  <p class="card-text-reviews text-light">"Snopp Dogg Playing The Wildly Entertaining 'SOS' Is Ridiculous."</p>
+                  <p class="card-text-date">December, 24 2018</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter">
+    <div class="container">
+      <div class="row">
+        
       </div>
     </div>
   </section>
