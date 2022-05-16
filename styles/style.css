@@ -2,7 +2,7 @@ body,
 html {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: "Bebas Neue" cursive !important;
   background: black !important;
   box-sizing: border-box;
 }
@@ -14,8 +14,8 @@ html {
 }
 
 a.nav-link {
-  text-transform: uppercase !important;
-  font-weight: 600 !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700 !important;
 }
 
 ul.my-nav-item {
@@ -41,15 +41,18 @@ ul > li.nav-item {
   background-image: url('../assets/main-bg.jpg');
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   filter: contrast(1); 
-  box-shadow: 0 0 50px 1px rgb(0, 0, 0) inset;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
 }
 
 h1.main-title {
-  font-size: 96px;
-  font-weight: 600;
-  margin-top: 300px;
+  margin-top: 180px;
+  font-size: 80px;
+  font-weight: 700;
 }
 
 .subtitle {
@@ -59,10 +62,10 @@ h1.main-title {
 }
 
 .btn-play {
-  padding-left: 10em !important;
-  padding-right: 10em !important;
+  padding: 0 10em !important;
   font-size: 12px !important;
-  font-weight: 800 !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700 !important;
   margin-top: 9%;
 }
 
@@ -75,10 +78,10 @@ h1.main-title {
   height: 100vh;
   position: relative;
   background-image: url('../assets/the-games-bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0 0 50px 1px rgb(0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 50px 1px rgb(0, 0, 0);
 }
 
 #games::before {
@@ -184,7 +187,7 @@ h1.main-title {
 
 .timeline-title {
   font-size: 24px;
-  color: #FFB548;
+  color: #F0AD45;
 }
 
 .timeline-subtitle {
@@ -213,7 +216,106 @@ h1.main-title {
 
 .require {
   font-size: 24px;
-  color: #FFB548;
+  color: #F0AD45;
+}
+
+#top-scores {
+  height: 100vh;
+  /* position: relative; */
+  background-image: url('../assets/top-score-bg.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* #top-scores::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url('../assets/top-score-bg.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 75%;
+} */
+
+.top-scores-left {
+  margin-top: 300px;
+}
+
+h1.top-scores-title {
+  font-size: 48px !important;
+  letter-spacing: 3px;
+}
+
+.see-more-btn {
+  padding: 1.5em 8em !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  margin-top: 9%;
+}
+
+.card-container {
+  margin-top: 30px;
+}
+
+.card {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/blankimage.jpg'); */
+  background-color: #1C1E1F !important;
+  border: none !important;
+  border-radius: 10px !important;
+  background-blend-mode: darken;
+}
+
+.card-container:nth-child(odd) .card {
+  margin-left: 120px;
+}
+
+.profle-img {
+  width: 50px;
+  height: 50px;
+  box-shadow: 8px 2px 1px 0 #FFB548;
+}
+
+.card-text-subtitle {
+  font-weight: 500;
+  color: #8C8D8E;
+}
+
+.column-profile {
+  margin-left: 1.3em;
+  line-height: 0;
+}
+
+.column-profile > h5 {
+  color: #F0AD45;
+}
+
+.twitter-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-text-reviews {
+  margin-top: 1.5em;
+  line-height: 1;
+}
+
+.card-text-date {
+  font-size: 14px;
+  color: #787979;
+  line-height: 1;
+}
+
+#newsletter {
+  height: 100vh;
+  background-image: url("../assets/skull.png"), url("../assets/newsletter.png");
+  background-repeat: no-repeat, repeat;
+  background-blend-mode: normal;
 }
 
 @media only screen and (max-width: 1360px) {
@@ -221,7 +323,7 @@ h1.main-title {
   h1.main-title {
     font-size: 76px;
     font-weight: 600;
-    margin-top: 200px;
+    margin-top: 150px;
   }
 
   .subtitle {
