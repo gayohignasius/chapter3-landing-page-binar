@@ -27,11 +27,11 @@ ul > li.nav-item {
   padding: 10px;
 }
 
-.hero {
+#hero {
   position: relative;
 }
 
-.hero::before {
+#hero::before {
   content: '';
   position: absolute;
   top: 0px;
@@ -71,12 +71,17 @@ h1.main-title {
   font-weight: 600;
 }
 
-.games {
+#games {
   height: 100vh;
   position: relative;
+  background-image: url('../assets/the-games-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 50px 1px rgb(0, 0, 0);
 }
 
-.games::before {
+#games::before {
   content: '';
   position: absolute;
   top: 0px;
@@ -96,9 +101,14 @@ h1.main-title {
   position: relative;
 }
 
-.games-text {
-  font-size: 48px;
+.games-title {
+  font-size: 24px;
   letter-spacing: 2px;
+}
+
+.games-text {
+  font-size: 50px;
+  letter-spacing: 5px;
 }
 
 .my-ellipse {
@@ -111,6 +121,100 @@ h1.main-title {
   justify-content: space-around;
 }
 
+#features {
+  height: 100vh;
+  background-image: url('../assets/features.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 50px 1px rgb(0, 0, 0);
+}
+
+.features-content {
+  float: right;
+}
+
+.features-subtitle {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.features-text {
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: center;
+  position: relative;
+  height: 250px;
+}
+
+.ellipse-full-timeline {
+  top: 3%;
+  left: 0;
+  position: absolute;
+}
+
+.v-line {
+  border-left: thin solid #fff;
+  height: 140px;
+  top: 8px;
+  left: 8px;
+  position: absolute;
+}
+
+.ellipse-outline-timeline {
+  bottom: 35%;
+  position: absolute;
+}
+
+.ellipse-second-outline-timeline {
+  bottom: 11%;
+  position: absolute;
+}
+
+.timeline-title-container {
+  width: 50%;
+  margin-left: 4em;
+}
+
+.timeline-title {
+  font-size: 24px;
+  color: #FFB548;
+}
+
+.timeline-subtitle {
+  font-size: 20px;
+}
+
+#requirements {
+  height: 100vh;
+  position: relative;
+}
+
+#requirements::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url('../assets/requirements.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50%;
+  box-shadow: 0 0 50px 1px rgb(0, 0, 0);
+}
+
+.require {
+  font-size: 24px;
+  color: #FFB548;
+}
 
 @media only screen and (max-width: 1360px) {
 
@@ -141,6 +245,11 @@ h1.main-title {
     border-top: 1px solid #ccc !important;
     margin: 1em 0 !important;
     padding: 0 !important;
+  }
+
+  .timeline-title-container {
+    width: 70%;
+    margin-left: 4em;
   }
 }
 
@@ -173,6 +282,23 @@ h1.main-title {
     border-top: 1px solid #ccc !important;
     margin: 1em 0 !important;
     padding: 0 !important;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: center;
+    position: relative;
+    height: 285px;
+  }
+
+  .v-line {
+    border-left: thin solid #fff;
+    height: 162px;
+    top: 8px;
+    left: 8px;
+    position: absolute;
   }
 }
 
