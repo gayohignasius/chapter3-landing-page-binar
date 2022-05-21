@@ -10,11 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,700;1,500;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,500;1,700&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="styles/js/bootstrap.min.js"></script>
   <title>Traditional Game</title>
 </head>
 <body>
@@ -29,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-lg-auto text-uppercase">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Work</a>
@@ -42,7 +37,7 @@
             </li>
           </ul>
           <hr>
-          <ul class="navbar-nav me-lg-6 offset-lg-4">
+          <ul class="navbar-nav me-lg-6 offset-lg-4 text-uppercase">
             <li class="nav-item">
               <a class="nav-link" href="#">Sign Up</a>
             </li>
@@ -98,9 +93,7 @@
   <section id="features" class="d-flex align-items-center">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-10">
+        <div class="col-lg-12">
           <div class="text-light features-content">
             <p class="features-subtitle">What's so special?</p>
             <h1 class="features-text">FEATURES</h1>
@@ -128,12 +121,12 @@
   <section id="requirements">
     <div class="container">
       <div class="row position-relative">
-        <div class="col">
+        <div class="col-lg-12">
           <div class="text-light d-flex justify-content-center align-items-center">
             <p class="mt-5">Can my computer run this game?</p>
           </div>
           <div class="w-25">
-            <h1 class="text-light display-4">SYSTEM REQUIREMENTS</h1>
+            <h1 class="text-light display-4 requirements-title">SYSTEM REQUIREMENTS</h1>
           </div>
           <table class="table table-bordered w-50 mt-4">
             <tbody class="text-light">
@@ -173,9 +166,9 @@
     </div>
   </section>
 
-  <section id="top-scores">
+  <section id="top-scores"  class="d-flex justify-content-center align-items-center">
     <div class="container">
-      <div class="row">
+      <div class="row position-relative">
         <div class="col-lg-5">
           <div class="text-light justify-content-center align-items-center top-scores-left">
             <h1 class="top-scores-title">TOP SCORES</h1>
@@ -183,7 +176,7 @@
             <button class="btn btn-warning btn-lg see-more-btn" type="button">See More</button>
           </div>
         </div>
-        <div class="col-lg-7 mt-5 pt-5">
+        <div class="col-lg-7">
           <div class="d-flex flex-column justify-content-center">
             <div class="card-container">
               <div class="card w-50">
@@ -195,7 +188,7 @@
                         <h5 class="card-title">Evan Lahti</h5>
                         <p class="card-text-subtitle">PC Gamer</p>
                       </div>
-                      <img src="./assets/twitter.svg" class="twitter-img" alt="twitter-img"/>
+                      <img src="./assets/twitter-card.png" class="twitter-img" alt="twitter-img"/>
                     </div>
                   </div>
                   <p class="card-text-reviews text-light">"One of my gaming highlights of the year."</p>
@@ -213,7 +206,7 @@
                         <h5 class="card-title">Jada Griffin</h5>
                         <p class="card-text-subtitle">Nerdreactor</p>
                       </div>
-                      <img src="./assets/twitter.svg" class="twitter-img" alt="twitter-img"/>
+                      <img src="./assets/twitter-card.png" class="twitter-img" alt="twitter-img"/>
                     </div>
                   </div>
                   <p class="card-text-reviews text-light">"The next big thing in the world of streaming and survival games."</p>
@@ -231,7 +224,7 @@
                         <h5 class="card-title">Aaron Williams</h5>
                         <p class="card-text-subtitle">Uproxx</p>
                       </div>
-                      <img src="./assets/twitter.svg" class="twitter-img" alt="twitter-img"/>
+                      <img src="./assets/twitter-card.png" class="twitter-img" alt="twitter-img"/>
                     </div>
                   </div>
                   <p class="card-text-reviews text-light">"Snopp Dogg Playing The Wildly Entertaining 'SOS' Is Ridiculous."</p>
@@ -245,12 +238,87 @@
     </div>
   </section>
 
-  <section id="newsletter">
+  <section id="newsletter" class="d-flex justify-content-center align-items-center">
     <div class="container">
-      <div class="row">
-        
+      <div class="row position-relative">
+        <div class="col-lg-6">
+          <div class="skull-img"></div>
+        </div>
+        <div class="col-lg-6 mt-5 pt-5 text-light">
+          <p class="text-wrap newsletter-text">Want to stay in touch?</p>
+          <h1 class="display-3 newsletter-title">NEWSLETTER SUBSCRIBE</h1>
+          <p class="newsletter-subtitle">In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.</p>
+          <div class="container p-0">
+            <div class="d-flex justify-content-between">
+              <div class="container-span text-wrap" style="width: 55%;">
+                <span class="text-secondary email-label">Your email address</span>
+                <span class="text-warning">youremail@binar.co.id</span>
+              </div>
+              <button class="btn btn-warning btn-lg btn-subscribe" type="button">Subsribe Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row position-relative text-light text-uppercase w-100 mx-0">
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col">
+              <ul class="d-flex justify-content-end align-items-center">
+                <li class="footer-nav-text">
+                  Main
+                </li>
+                <li class="footer-nav-text">
+                  About
+                </li>
+                <li class="footer-nav-text">
+                  Game Features
+                </li>
+                <li class="footer-nav-text">
+                  System Requirements
+                </li>
+                <li class="footer-nav-text">
+                  Quotes
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 px-0">
+          <div class="row">
+            <div class="col float-lg-end px-0">
+              <ul class="d-flex justify-content-end align-items-center ">
+                <li class="footer-nav-img">
+                  <img src="./assets/facebook.svg" alt="facebook">
+                </li>
+                <li class="footer-nav-img">
+                  <img src="./assets/twitter.svg" alt="twitter">
+                </li>
+                <li class="footer-nav-img">
+                  <img src="./assets/vector.svg" alt="vector">
+                </li>
+                <li class="footer-nav-img">
+                  <img src="./assets/twitch.svg" alt="twitch">
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row position-relative">
+        <hr class="footer-line">
+      </div>
+      <div class="row position-relative justify-content-between">
+        <div class="col-6">
+          &copy; 2018 Your Games, Inc. All Rights Reserved
+        </div>
+        <div class="col-6 text-uppercase text-end text-white">
+          Privacy Policy | Terms of Services | Code of Products
+        </div>
       </div>
     </div>
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="styles/js/bootstrap.min.js"></script>
 </body>
 </html>
