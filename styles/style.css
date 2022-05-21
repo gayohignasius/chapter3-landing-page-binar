@@ -2,9 +2,11 @@ body,
 html {
   margin: 0px;
   padding: 0px;
-  font-family: "Bebas Neue" cursive !important;
-  background: black !important;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  /* background: black !important; */
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .my-navbar {
@@ -14,7 +16,6 @@ html {
 }
 
 a.nav-link {
-  font-family: "Open Sans", sans-serif;
   font-weight: 700 !important;
 }
 
@@ -25,6 +26,11 @@ ul.my-nav-item {
 ul > li.nav-item {
   font-size: 12px;
   padding: 10px;
+  letter-spacing: 10%;
+}
+
+ul > li > a.nav-link {
+  color: white !important;
 }
 
 #hero {
@@ -46,13 +52,14 @@ ul > li.nav-item {
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 h1.main-title {
   margin-top: 180px;
-  font-size: 80px;
+  font-size: 72px;
   font-weight: 700;
+  letter-spacing: 3px;
 }
 
 .subtitle {
@@ -109,9 +116,9 @@ h1.main-title {
   letter-spacing: 2px;
 }
 
-.games-text {
-  font-size: 50px;
-  letter-spacing: 5px;
+h1.games-text {
+  font-size: 56px;
+  letter-spacing: 3px;
 }
 
 .my-ellipse {
@@ -142,9 +149,9 @@ h1.main-title {
   letter-spacing: 2px;
 }
 
-.features-text {
-  font-size: 50px;
-  letter-spacing: 5px;
+h1.features-text {
+  font-size: 56px;
+  letter-spacing: 3px;
 }
 
 .timeline {
@@ -195,7 +202,7 @@ h1.main-title {
 }
 
 #requirements {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -210,8 +217,12 @@ h1.main-title {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 50%;
+  opacity: .95;
   box-shadow: 0 0 50px 1px rgb(0, 0, 0);
+}
+
+h1.requirements-title {
+  letter-spacing: 3px;
 }
 
 .require {
@@ -221,14 +232,10 @@ h1.main-title {
 
 #top-scores {
   height: 100vh;
-  /* position: relative; */
-  background-image: url('../assets/top-score-bg.png');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
 }
 
-/* #top-scores::before {
+#top-scores::before {
   content: '';
   position: absolute;
   top: 0px;
@@ -239,15 +246,14 @@ h1.main-title {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 75%;
-} */
+}
 
 .top-scores-left {
   margin-top: 300px;
 }
 
 h1.top-scores-title {
-  font-size: 48px !important;
+  font-size: 56px;
   letter-spacing: 3px;
 }
 
@@ -313,9 +319,100 @@ h1.top-scores-title {
 
 #newsletter {
   height: 100vh;
-  background-image: url("../assets/skull.png"), url("../assets/newsletter.png");
-  background-repeat: no-repeat, repeat;
-  background-blend-mode: normal;
+  position: relative;
+}
+
+#newsletter::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url('../assets/newsletter.png'), linear-gradient(#080A0B, #080A0B);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.skull-img {
+  position: relative;
+  height: 780px;
+  background: url("../assets/skull.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.skull-img::after {
+  content: '';
+  position: absolute;
+  width: 650px;
+  height: 100vh;
+  background: url(../assets//top-score-bg\(2\).png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75% 95%;
+  top: -200px;
+  right: -30px;
+}
+
+.newsletter-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  width: 10rem;
+}
+
+h1.newsletter-title {
+  letter-spacing: 3px;
+}
+
+.newsletter-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.container-span {
+  background-color: #1C1E1F;
+  border: none;
+  border-radius: 8px;
+  height: 4rem;
+}
+
+span {
+  margin: 1.5rem;
+}
+
+span.email-label {
+  font-size: 14px;
+}
+
+.btn-subscribe {
+  padding: 0 5em !important;
+  font-size: 16px!important;
+  font-weight: 700 !important;
+}
+
+ul > li.footer-nav-text {
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 1.5em 32px;
+}
+
+ul > li.footer-nav-img {
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 1.5em 2em;
+}
+
+hr.footer-line {
+  top: 150px;
+  border: 1px solid #8C8D8E;
 }
 
 @media only screen and (max-width: 1360px) {
@@ -352,6 +449,9 @@ h1.top-scores-title {
   .timeline-title-container {
     width: 70%;
     margin-left: 4em;
+  }
+  .card-container {
+    margin-top: 10px;
   }
 }
 
